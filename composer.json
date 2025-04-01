@@ -1,0 +1,18 @@
+{
+    "name": "jandrey/suplos",
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "App\\": "App/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jandrey Serna",
+            "email": "jandrey.restrepo@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

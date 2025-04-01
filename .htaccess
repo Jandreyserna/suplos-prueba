@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /
+
+# Redirigir todas las solicitudes a Core/Router.php, manteniendo la ruta
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ Core/Router.php?url=$1 [QSA,L]
