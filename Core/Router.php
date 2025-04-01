@@ -6,12 +6,6 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::createImmutable(__DIR__ . '/..');
 $dotenv->load();
 
-
-
-
-
-
-
 $ruta = $_SERVER['REQUEST_URI'];
 $ruta = explode('/', $ruta);
 $ruta = array_filter($ruta);
