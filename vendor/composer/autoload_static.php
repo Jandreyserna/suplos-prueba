@@ -4,24 +4,51 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitc78707c09c3bb5d8dfdd278a4ee6505c
+class ComposerStaticInit8917b47795556454be999a2c699c0a48
 {
     public static $files = array (
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
+        'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
+        '60799491728b879e74601d83e38b2cad' => __DIR__ . '/..' . '/illuminate/collections/helpers.php',
+        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        'c379e2a4ec3735f6c4915556c8c81813' => __DIR__ . '/..' . '/rap2hpoutre/fast-excel/src/functions/fastexcel.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'v' => 
+        array (
+            'voku\\' => 5,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Symfony\\Contracts\\Translation\\' => 30,
+            'Symfony\\Component\\Translation\\' => 30,
+        ),
+        'R' => 
+        array (
+            'Rap2hpoutre\\FastExcel\\' => 22,
         ),
         'P' => 
         array (
+            'Psr\\SimpleCache\\' => 16,
+            'Psr\\Container\\' => 14,
+            'Psr\\Clock\\' => 10,
             'PhpOption\\' => 10,
+        ),
+        'O' => 
+        array (
+            'OpenSpout\\' => 10,
+        ),
+        'I' => 
+        array (
+            'Illuminate\\Support\\' => 19,
+            'Illuminate\\Contracts\\' => 21,
         ),
         'G' => 
         array (
@@ -30,10 +57,13 @@ class ComposerStaticInitc78707c09c3bb5d8dfdd278a4ee6505c
         'D' => 
         array (
             'Dotenv\\' => 7,
+            'Doctrine\\Inflector\\' => 19,
         ),
         'C' => 
         array (
             'Core\\' => 5,
+            'Carbon\\Doctrine\\' => 16,
+            'Carbon\\' => 7,
         ),
         'A' => 
         array (
@@ -42,6 +72,10 @@ class ComposerStaticInitc78707c09c3bb5d8dfdd278a4ee6505c
     );
 
     public static $prefixDirsPsr4 = array (
+        'voku\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
+        ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
@@ -54,9 +88,48 @@ class ComposerStaticInitc78707c09c3bb5d8dfdd278a4ee6505c
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
+        'Symfony\\Contracts\\Translation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/translation-contracts',
+        ),
+        'Symfony\\Component\\Translation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/translation',
+        ),
+        'Rap2hpoutre\\FastExcel\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rap2hpoutre/fast-excel/src',
+        ),
+        'Psr\\SimpleCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
+        ),
+        'Psr\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'Psr\\Clock\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/clock/src',
+        ),
         'PhpOption\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
+        ),
+        'OpenSpout\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/openspout/openspout/src',
+        ),
+        'Illuminate\\Support\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/support',
+            1 => __DIR__ . '/..' . '/illuminate/collections',
+            2 => __DIR__ . '/..' . '/illuminate/macroable',
+            3 => __DIR__ . '/..' . '/illuminate/conditionable',
+        ),
+        'Illuminate\\Contracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/contracts',
         ),
         'GrahamCampbell\\ResultType\\' => 
         array (
@@ -66,9 +139,21 @@ class ComposerStaticInitc78707c09c3bb5d8dfdd278a4ee6505c
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
         ),
+        'Doctrine\\Inflector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
+        ),
         'Core\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Core',
+        ),
+        'Carbon\\Doctrine\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine',
+        ),
+        'Carbon\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
         ),
         'App\\' => 
         array (
@@ -88,9 +173,9 @@ class ComposerStaticInitc78707c09c3bb5d8dfdd278a4ee6505c
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitc78707c09c3bb5d8dfdd278a4ee6505c::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitc78707c09c3bb5d8dfdd278a4ee6505c::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitc78707c09c3bb5d8dfdd278a4ee6505c::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit8917b47795556454be999a2c699c0a48::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit8917b47795556454be999a2c699c0a48::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit8917b47795556454be999a2c699c0a48::$classMap;
 
         }, null, ClassLoader::class);
     }

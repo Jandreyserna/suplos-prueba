@@ -3,10 +3,10 @@
 
         <div class="d-flex justify-content-between">
             <h3>
-                Crear proceso / Evento participación cerrada
+                Consultar procesos / Eventos participación cerrada
             </h3>
 
-            <div class="btn btn-dark d-flex align-items-center"">   
+            <div class="btn btn-dark d-flex align-items-center" onclick="loadView('oferta')">   
                 <i class="bi bi-caret-left-fill"></i>
 
                 <div>
@@ -18,7 +18,7 @@
         <hr class="border border-warning">
 
         <div>
-            <?PHP require_once './App/components/oferta/busqueda.php';?>
+            <?=$viewObject::renderComponet('oferta/busqueda', ['ofertas' => $ofertas]); ?>
         </div>
     
     </div>

@@ -22,7 +22,7 @@
             <label for="horaInicioInput" class="form-label">Hora inicio</label>
 
             <div class="input-group">
-                <input type="text" class="form-control" id="horaInicioInput" >
+                <input type="time" class="form-control" id="horaInicioInput" >
                 <span class="input-group-text">
                     <i class="bi bi-clock"></i>
                 </span>
@@ -45,7 +45,7 @@
             <label for="horaCierreInput" class="form-label">Hora cierre</label>
 
             <div class="input-group">
-                <input type="text" class="form-control" id="horaCierreInput" >
+                <input type="time" class="form-control" id="horaCierreInput" >
                 <span class="input-group-text">
                     <i class="bi bi-clock"></i>
                 </span>
@@ -56,9 +56,9 @@
 
     <hr class="border border-dark mt-5 mb-5">
 
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center" onclick="validarCronograma()">
 
-        <div class="btn btn-success d-flex align-items-center"">
+        <div class="btn btn-success d-flex align-items-center">
             <div>
                 Guardar
             </div>

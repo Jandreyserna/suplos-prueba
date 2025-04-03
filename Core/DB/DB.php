@@ -33,18 +33,24 @@ class DB
         return self::$instance;
     }
 
-    public static function execute($query) {
+    public static function execute($query, $params = []) {
         $connection = self::getInstance()->connection;
         $db = $connection->prepare($query);
-        $db->execute();
+        $db->execute($params);
         $response = $db->fetchAll(\PDO::FETCH_ASSOC);
         $db->closeCursor();
 
         return $response;
     }
 
+    public static function lastInsertId() {
+        $connection = self::getInstance()->connection;
+        return $connection->lastInsertId();
+    }
+
     public function closeConnection() {
         $this->connection = null;
     }
+
 
 }

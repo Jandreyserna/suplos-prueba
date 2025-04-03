@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         
-        <div class="col-md-4 bg-primary" onclick="loadView('oferta', '')">
+        <div class="col-md-4 bg-primary" onclick="loadView('oferta')">
             <div class="d-flex justify-content-center">
                 <h4>Procesos / Eventos</h4>    
             </div>

@@ -6,7 +6,7 @@
                 Crear proceso / Evento participación cerrada
             </h3>
 
-            <div class="btn btn-dark d-flex align-items-center"">   
+            <div class="btn btn-dark d-flex align-items-center" onclick="loadView('oferta', 'index')">   
                 <i class="bi bi-caret-left-fill"></i>
 
                 <div>
@@ -33,19 +33,15 @@
 
         <div class="tab-content pt-5" id="tab-content">
             <div class="tab-pane active" id="simple-tabpanel-0" role="tabpanel" aria-labelledby="simple-tab-0">
-                <?php //$this->render('basica')
-                    //var_dump($_SERVER['DOCUMENT_ROOT']);
-                    //var_dump(file_exists('./App/components/oferta/basica.php'));
-                    require './App/components/oferta/basica.php';
-                ?>  
+                <?=$viewObject::renderComponet('oferta/basica'); ?>
             </div>
             
             <div class="tab-pane" id="simple-tabpanel-1" role="tabpanel" aria-labelledby="simple-tab-1">
-                <?php require './App/components/oferta/cronograma.php'; ?>
+                <?=$viewObject::renderComponet('oferta/cronograma'); ?>
             </div>
             
             <div class="tab-pane" id="simple-tabpanel-2" role="tabpanel" aria-labelledby="simple-tab-2">
-                <?php require './App/components/oferta/documentacion.php'; ?>
+                <?=$viewObject::renderComponet('oferta/documentacion'); ?>
             </div>
         </div>
     
